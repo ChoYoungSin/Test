@@ -54,7 +54,7 @@ bool P2PTrajectory::PointToPointInit(float destinationDeg, float speedDeg, float
 		dAcc = dirDisplacement * 0.5 * fabs_(displacementDeg);
 	}
 
-	return true;//test
+	return true;
 }
 
 bool P2PTrajectory::PointToPointPlay(float time)
@@ -88,7 +88,7 @@ bool P2PTrajectory::PointToPointPlay(float time)
 		{
 			positionTargetRad = DEG_TO_RAD * (displacementDeg + startPositionDeg);
 			return true;
-		}//test
+		}
 		// Triangular velocity profile
 	case 2:
 		if (time < tAcc)
@@ -123,7 +123,7 @@ bool P2PTrajectory::TrajectoryPlayRad(float targetRad)
 {
 	positionTargetRad = targetRad;
 
-	return true;//test
+	return true;
 }
 bool P2PTrajectory::HardStop()
 {
